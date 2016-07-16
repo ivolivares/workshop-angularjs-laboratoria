@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp" ng-controller="studentController">
+<head>
+  <meta charset="UTF-8">
+  <title>Filters in AngularJS: filter</title>
+</head>
+<body>
+  <h1>AngularJS Sample Application for: Filters &raquo; filter</h1>
+  <div>
+    <form>
+      Enter subject: <input type="text" ng-model="subjectName" />
+    </form>
+    <p>Subject:</p>
+    <ul>
+      <li ng-repeat="subject in student.subjects | filter: subjectName">
+         {{ subject.name + ', marks:' + subject.marks }}
+      </li>
+    </ul>
+  </div>
+
+  <script src="../../libs/angular.min.js"></script>
+  <script src="../../4.Controllers/studentController.js"></script>
+</body>
+</html>
