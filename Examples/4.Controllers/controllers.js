@@ -1,6 +1,6 @@
-var mainApp = angular.module("mainApp", []);
+var app = angular.module("laboratoriaApp", []);
 
-mainApp.controller('studentController', function( $scope ) {
+app.controller('studentController', function( $scope ) {
   $scope.student = {
     firstName: 'Homero',
     lastName: 'Simpson',
