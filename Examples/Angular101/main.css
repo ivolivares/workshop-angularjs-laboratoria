@@ -1,0 +1,9 @@
+body {
+  background: url('fondo-bonito.jpg') no-repeat center center #E4E4E4;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Arial';
+  font-weight: 700;
+  padding: 20%;
+  -webkit-animation: bounceInUp 1s;
+}
