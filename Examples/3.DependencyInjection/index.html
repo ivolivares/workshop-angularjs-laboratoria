@@ -6,9 +6,11 @@
 <body>
   <h1>AngularJS Sample Application for: Dependency Injection</h1>
   <div ng-app="mainApp" ng-controller="CalcController">
-    <p>Enter a number: <input type="number" ng-model="number" /></p>
+    <p>Enter a number: <input type="text" ng-model="number" /></p>
     <button ng-click="square()">X<sup>2</sup></button>
-    <p>Result: {{result}}</p>
+    <button ng-click="division()">&divide; 2</button>
+    <p>Result multiply: {{result.multiply}}</p>
+    <p>Result division: {{result.division}}</p>
   </div>
 
   <script src="../libs/angular.min.js"></script>
