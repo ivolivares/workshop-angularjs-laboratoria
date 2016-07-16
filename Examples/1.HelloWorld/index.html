@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app>
 <head>
-  <meta charset="UTF-8">
   <title>Hello World in AngularJS</title>
 </head>
 <body>
-  
+  What's your name?:
+  <input type="text" ng-model="sometext" />
+  <h1>Hello {{ sometext }}</h1>
+
+  <script src="../libs/angular.min.js"></script>
 </body>
 </html>

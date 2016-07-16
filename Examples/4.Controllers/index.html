@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Controllers in AngularJS</title>
+</head>
+<body>
+  <h1>AngularJS Sample Application for: Controllers</h1>
+  <div ng-app="mainApp" ng-controller="studentController">
+    <form>
+      <label for="firstName">Enter first name:</label>
+      <input type="text" id="firstName" ng-model="student.firstName" />
+
+      <label for="lastName">Enter last name:</label>
+      <input type="text" id="lastName" ng-model="student.lastName" />
+    </form>
+    <p>You are entering: {{student.fullName()}}</p>
+  </div>
+
+  <script src="../libs/angular.min.js"></script>
+  <script src="./controllers.js"></script>
+</body>
+</html>

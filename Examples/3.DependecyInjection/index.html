@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dependency Injection in AngularJS</title> 
+</head>
+<body>
+  <h1>AngularJS Sample Application for: Dependency Injection</h1>
+  <div ng-app="mainApp" ng-controller="CalcController">
+    <p>Enter a number: <input type="number" ng-model="number" /></p>
+    <button ng-click="square()">X<sup>2</sup></button>
+    <p>Result: {{result}}</p>
+  </div>
+
+  <script src="../libs/angular.min.js"></script>
+  <script src="./dependencyInjection.js"></script>
+</body>
+</html>
