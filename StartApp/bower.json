@@ -1,0 +1,12 @@
+{
+  "name": "startapp-angularjs",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "angular": "^1.5.7",
+    "jquery": "~2.1.3",
+    "animate.css": "~3.2.5",
+    "font-awesome": "fontawesome#^4.6.3",
+    "bootstrap": "^3.3.6"
+  }
+}
