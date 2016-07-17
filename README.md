@@ -25,8 +25,9 @@ Necesitas tener pre-instalado:
 3. [Directivas](/Examples/3.Directives/)
 4. [Injección de Dependencias](/Examples/4.DependencyInjection/)
 5. [Filtros](/Examples/5.Filters/)
-6. [Templates](/Examples/6.Templates/)
-7. [Rutas](/Examples/7.Routes/)
+6. [DOM Manipulation](/Examples/6.DOM/)
+7. [Templates](/Examples/7.Templates/)
+8. [Rutas](/Examples/8.Routes/)
 
 ## Tips + Info Adicional
 

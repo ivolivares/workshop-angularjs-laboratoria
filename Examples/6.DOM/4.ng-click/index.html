@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM in AngularJS</title>
+</head>
+<body>
+  <h1>AngularJS Sample Application for: DOM &raquo; ng-click</h1>
+  <div>
+    <form>
+      <p>Total click: {{ clickCounter || 0}}</p>
+      <!-- use double pipe (as "or" expression) to define the default value: 0 -->
+      
+      <button ng-click="clickCounter = clickCounter + 1">Click Me!</button>
+    </form>
+  </div>
+
+  <script src="../../libs/angular.min.js"></script>
+</body>
+</html>
