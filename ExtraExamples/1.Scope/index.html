@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp" ng-controller="appController">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.meta.title }}</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <h1 ng-bind-html="toTrustedHTML(page.headings.title)"></h1>
+  <div ng-controller="shapeController">
+    <p>{{ message }}</p>
+
+    <div ng-controller="circleController">
+      <div class="{{ type }}">
+        <p>{{ message }}</p>
+      </div>
+    </div>
+
+    <div ng-controller="squareController">
+      <div class="{{ type }}">
+        <p>{{ message }}</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../Examples/libs/angular.min.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/appController.js"></script>
+  <script src="./js/shapeController.js"></script>
+  <script src="./js/squareController.js"></script>
+  <script src="./js/circleController.js"></script>
+</body>
+</html>

@@ -34,6 +34,11 @@ Como instalar http-server?
 7. [Templates](/Examples/7.Templates/)
 8. [Rutas](/Examples/8.Routes/)
 
+## Extras!
+
+1. [Entendiendo el $scope](/ExtraExamples/1.Scope)
+2. [Iniciando una primera Página en AngularJS](/ExtraExamples/2.HowToFirstPage)
+
 ## Tips + Info Adicional
 
 - [Globant UI - AngularJS Style Guide :wink:](https://github.com/globant-ui/angularjs-styleguide)
