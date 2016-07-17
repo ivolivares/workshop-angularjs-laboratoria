@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="mainApp" ng-controller="countriesController" ng-init="page = { title: 'Directives in AngularJS'}">
 <head>
-  <title>Directives in AngularJS</title>
+  <title>{{ page.title }}</title>
   <style>
     p > span {
       color: #F00;
@@ -9,28 +9,16 @@
   </style>
 </head>
 <body>
+  <!-- To execute this example use node http-server: https://www.npmjs.com/package/http-server
+    Run in console:
+      http-server ./
+  -->
   <h1>AngularJS Sample Application for: Directives</h1>
-  <div ng-app="" ng-init="countries = [{
-          locale:'en-US',
-          name:'United States'
-        },
-        {
-          locale:'en-GB',
-          name:'United Kingdom'
-        }, {
-          locale:'en-FR',
-          name:'France'
-        }]">
-      <p>Enter your Name: <input type="text" ng-model="name"></p>
-      <p>Hello <span ng-bind="name"></span>!</p>
-      <p>List of Countries with locale:</p>
-      <ol>
-        <li ng-repeat="country in countries">
-           {{ 'Country: ' + country.name + ', Locale: ' + country.locale }}
-        </li>
-      </ol>
+  <div>
+    <div ng-include="'./name.html'"></div> <!-- Note: use string rout to file with '' into "" -->
+    <div ng-include="'./list.html'"></div>
   </div>
-
-  <script src="../../libs/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script src="./countriesController.js"></script>
 </body>
 </html>

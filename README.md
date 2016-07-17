@@ -17,6 +17,11 @@ Necesitas tener pre-instalado:
 - Node JS
 - NPM
 - Bower + bower-cli
+- [http-server](https://www.npmjs.com/package/http-server)
+
+Como instalar http-server?
+
+    npm install http-server -g
 
 ## Ejemplos prácticos
 
