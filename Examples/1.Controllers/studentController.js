@@ -1,6 +1,6 @@
 var app = angular.module("mainApp", []);
 
-app.controller('studentController', function($scope) {
+app.controller('studentController', function( $scope ) {
    $scope.student = {
       firstName: "Bart",
       lastName: "Simpson",
