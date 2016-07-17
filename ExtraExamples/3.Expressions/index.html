@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="">
+<head>
+  <meta charset="UTF-8">
+  <title>Expressions in AngularJS</title>
+</head>
+<body>
+  <h1>Understanding <code>{{expressions}}</code></h1>
+  <div ng-init = "quantity = 1;cost = 30; student = {firstname:'Homero',lastname:'Simpson',rollno:101};marks=[80,90,75,73,60]">
+    <p>Hola {{ student.firstname + " " + student.lastname }}!</p>
+    <p>Costo total : {{ cost * quantity }} CLP</p>
+    <p>Roll No: {{ student.rollno }}</p>
+    <p>Marks (Math): {{ marks[3] }}</p>
+  </div>
+
+  <script src="../../Examples/libs/angular.min.js"></script>
+</body>
+</html>
