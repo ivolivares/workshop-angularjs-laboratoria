@@ -12,11 +12,10 @@ En este repositorio encontrarás los ejemplos creados para el Workshop y una lis
 
 ## Requisitos
 
-Necesitas tener pre-instalado:
+Cumplir con los [requisitos del Workshop de Devtools](https://github.com/ivolivares/workshop-devtools-laboratoria#requisitos-previos).
 
-- Node JS
-- NPM
-- Bower + bower-cli
+Además, necesitas tener pre-instalado:
+
 - [http-server](https://www.npmjs.com/package/http-server)
 
 Como instalar http-server?
