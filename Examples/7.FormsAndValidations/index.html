@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp" ng-controller="studentController">
+<head>
+  <title>Forms and Validations in AngularJS</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <style>
+    .error {
+       color: #F00;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>AngularJS Sample Application for: Forms and Validations</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <form class="form-horizontal" name="form" novalidate>
+          <div class="form-group">
+            <label for="nameID" class="col-lg-2 control-label">Name:</label>
+            <div class="col-lg-10">
+              <input type="text" class="form-control" ng-model="user.name" name="uName" id="nameID" required />
+              <div class="help-block error" ng-show="form.$submitted || form.uName.$touched">
+                <div ng-show="form.uName.$error.required">Tell us your name.</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="emailID" class="col-lg-2 control-label">E-mail:</label>
+            <div class="col-lg-10">
+              <input type="email" class="form-control" ng-model="user.email" name="uEmail" id="emailID" required />
+              <div class="help-block error" ng-show="form.$submitted || form.uEmail.$touched">
+                <div ng-show="form.uEmail.$error.required">Tell us your e-mail.</div>
+                <div ng-show="form.uEmail.$error.email">This is not a valid e-mail.</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="agreeID" class="col-lg-2 control-label">I agree:</label>
+            <div class="col-lg-10">
+              <input type="checkbox" ng-model="user.agree" id="agreeID" name="userAgree" required />
+              <input ng-show="user.agree" type="text" ng-model="user.agreeSign" required />
+              <div class="help-block error" ng-show="form.$submitted || form.userAgree.$touched">
+                <div ng-show="!user.agree || !user.agreeSign">Please agree and sign.</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-lg-offset-2 col-lg-10">
+              <input class="btn btn-default" type="button" ng-click="reset(form)" value="Reset" />
+              <input class="btn btn-default" type="submit" ng-click="update(user)" value="Save" />
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-12">
+        <pre>user = {{ user | json }}</pre>
+        <pre>master = {{ master | json }}</pre>
+      </div>
+    </div>
+  </div>
+  <script src="../libs/angular.min.js"></script>
+  <script src="./js/studentController.js"></script>
+</body>
+</html>
