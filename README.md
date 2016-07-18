@@ -29,8 +29,7 @@ Como instalar http-server?
 5. [Filtros](/Examples/5.Filters/)
 6. [DOM Manipulation](/Examples/6.DOM/)
 7. [AJAX](/Examples/7.AJAX/)
-8. [Templates](/Examples/8.Templates/)
-9. [Rutas](/Examples/9.Routes/)
+8. [Templates y Rutas](/Examples/8.TemplatesAndRoutes/)
 
 ## Extras :exclamation:
 
