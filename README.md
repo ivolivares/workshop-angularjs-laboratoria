@@ -12,11 +12,9 @@ En este repositorio encontrarás los ejemplos creados para el Workshop y una lis
 
 ## Requisitos
 
-Cumplir con los [requisitos del Workshop de Devtools](https://github.com/ivolivares/workshop-devtools-laboratoria#requisitos-previos).
-
-Además, necesitas tener pre-instalado:
-
-- [http-server](https://www.npmjs.com/package/http-server)
+- Cumplir con los [requisitos del Workshop de Devtools](https://github.com/ivolivares/workshop-devtools-laboratoria#requisitos-previos).
+- [Entender que es AJAX](https://es.wikipedia.org/wiki/AJAX)
+- Además, necesitas tener pre-instalado: [http-server](https://www.npmjs.com/package/http-server)
 
 Como instalar http-server?
 
