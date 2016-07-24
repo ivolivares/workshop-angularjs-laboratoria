@@ -38,6 +38,10 @@ Como instalar http-server?
 2. [Iniciando una primera Página en AngularJS](/ExtraExamples/2.HowToFirstPage)
 3. [Entendiendo las {{expresiones}}](/ExtraExamples/3.Expressions)
 
+## Ejercicio final
+
+1. [Portfolio App](/PortfolioApp)
+
 ## Tips + Info Adicional
 
 - [Documentación Oficial :smile:](https://code.angularjs.org/1.5.7/docs/api)
