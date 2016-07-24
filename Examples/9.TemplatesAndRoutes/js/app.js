@@ -1,34 +1,36 @@
 'use strict';
-angular.module('ngViewExample', ['ngRoute', 'ngAnimate'])
-.config(['$routeProvider', '$locationProvider',
-  function( $routeProvider, $locationProvider ) {
-    $routeProvider
-      .when('/Book/:bookId', {
-        templateUrl: './views/book.html',
-        controller: 'BookCtrl',
-        controllerAs: 'book'
-      })
-      .when('/Book/:bookId/chapter/:chapterId', {
-        templateUrl: './views/chapter.html',
-        controller: 'ChapterCtrl',
-        controllerAs: 'chapter'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
+var callbackConfig = function( $routeProvider, $locationProvider ) {
+  $routeProvider
+  .when('/Book/:bookId', {
+    templateUrl: './views/book.html',
+    controller: 'BookController',
+    controllerAs: 'book'
+  })
+  .when('/Book/:bookId/chapter/:chapterId', {
+    templateUrl: './views/chapter.html',
+    controller: 'ChapterController',
+    controllerAs: 'chapter'
+  })
+  .otherwise({
+    redirectTo: '/'
+  });
+},
+mainController = function( $route, $routeParams, $location ) {
+  this.$route = $route;
+  this.$location = $location;
+  this.$routeParams = $routeParams;
+},
+bookController = function( $routeParams ) {
+  this.name = "BookController";
+  this.params = $routeParams;
+},
+chapterController = function( $routeParams ) {
+  this.name = "ChapterController";
+  this.params = $routeParams;
+};
 
-}])
-.controller('MainCtrl', ['$route', '$routeParams', '$location',
-  function( $route, $routeParams, $location ) {
-    this.$route = $route;
-    this.$location = $location;
-    this.$routeParams = $routeParams;
-}])
-.controller('BookCtrl', ['$routeParams', function($routeParams) {
-  this.name = "BookCtrl";
-  this.params = $routeParams;
-}])
-.controller('ChapterCtrl', ['$routeParams', function($routeParams) {
-  this.name = "ChapterCtrl";
-  this.params = $routeParams;
-}]);
+angular.module('ngViewExample', ['ngRoute', 'ngAnimate'])
+.config(['$routeProvider', '$locationProvider', callbackConfig])
+.controller('MainController', ['$route', '$routeParams', '$location', mainController])
+.controller('BookCtrl', ['$routeParams', bookController])
+.controller('ChapterCtrl', ['$routeParams', chapterController]);

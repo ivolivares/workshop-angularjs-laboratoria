@@ -31,10 +31,10 @@
     <form>
       <label>
         Click me:
-        <input type="checkbox" ng-model="checked" ng-init="checked=true" />
+        <input type="checkbox" ng-model="mostrar" ng-init="mostrar=true" />
       </label>
       <p>Show when checked:</p>
-      <span ng-if="checked" class="animate-if">
+      <span ng-if="mostrar" class="animate-if">
         This is removed when the checkbox is unchecked.
       </span>
     </form>

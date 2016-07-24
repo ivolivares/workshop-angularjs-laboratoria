@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="labPortfolio" ng-controller="MainController as main">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ main.meta.title }}</title>
+  <meta name="description" content="{{ main.meta.description }}">
+  <base href="/">
+  <link rel="stylesheet" href="./css/libs/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#/Home">{{ main.titulo }}</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav" ng-controller="NavigationController as nav"> <!-- Cambia el scope a NavigationController -->
+          <!-- 
+            - Creamos una iteración de <li> con ng-repeat.
+            - En ng-class utilizamos la función .setClass() donde le entregamos la expresión
+            {{ menu.url }} como un string ('') para validar en la función (línea 138 app.js)
+          -->
+          <li ng-class="nav.setClass('{{ menu.url }}')" ng-repeat="menu in nav.menuApp">
+            <a href="#/{{ menu.url }}">
+              {{ menu.nombre }}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Definimos ng-view para reemplazar el valor de templateUrl por el contenido de éste <div>. -->
+  <div class="container" ng-view></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
