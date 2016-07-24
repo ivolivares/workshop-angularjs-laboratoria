@@ -40,6 +40,7 @@ Como instalar http-server?
 
 ## Tips + Info Adicional
 
+- [Documentación Oficial :smile:](https://code.angularjs.org/1.5.7/docs/api)
 - [Definición de: Módulo :package:](https://es.wikipedia.org/wiki/M%C3%B3dulo_(inform%C3%A1tica))
 - [Globant UI - AngularJS Style Guide :wink:](https://github.com/globant-ui/angularjs-styleguide)
 - [Videos del Mobile Studio de Globant - Por Geronimo :smile:](https://www.youtube.com/playlist?list=PLQct7-AR0JcFn1wJX0EN1XcPswB_wbKHR)
